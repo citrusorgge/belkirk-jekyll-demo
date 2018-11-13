@@ -8,6 +8,7 @@ fields:
   label: Title
   config:
     required: true
+  default: hhy
 - type: textarea
   name: description
   label: Description
@@ -24,3 +25,9 @@ fields:
   label: layout
   hidden: true
   default: post
+- type: select
+  config:
+    source:
+      type: pages
+  default: _posts/example-draft.md
+- type: include
